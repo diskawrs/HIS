@@ -27,8 +27,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>16</source>
-                    <target>16</target>
+                    <source>21</source>
+                    <target>21</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -59,8 +59,8 @@
 
     <repositories>
         <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>sonatype</id>
@@ -81,25 +81,11 @@
     </repositories>
 
     <dependencies>
-        <!-- Spigot API
+        <!-- Paper API -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-1.17.1</artifactId>
-            <version>dev</version>
-            <scope>provided</scope>
-        </dependency> -->
-        <!-- Spigot API
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.19-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency> -->
-        <!-- Spigot API -->
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.21.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <!-- MMOCore -->
@@ -117,7 +103,6 @@
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -131,6 +116,5 @@
             <version>2.11.5</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 </project>
